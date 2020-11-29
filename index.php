@@ -45,19 +45,20 @@
 
 		<link rel="apple-touch-icon" href="touch-icon-ipad.png?ver=2018.04.05" />
 		<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png?ver=2018.04.05" />
-		<link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.pn?ver=2018.04.05" />
+		<link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png?ver=2018.04.05" />
 		<link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png?ver=2018.04.05" />
 
 		<link href='https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700' rel='stylesheet' type='text/css'>
 
-		<link rel="stylesheet" href="css/style.css?ver=2018-04-05c" type="text/css">
+		<link rel="stylesheet" href="css/style.css?ver=2020.11.29" type="text/css">
+		<link rel="manifest" href="manifest.json">
 
 		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 
 		<script type="text/javascript" src="viewer/jquery.md5.js"></script>
 		<script type="text/javascript" src="viewer/jquery.cookie.js"></script>
-		<script type="text/javascript" src="viewer/clear_view_cameras.js?ver=2018-04-05b"></script>
+		<script type="text/javascript" src="viewer/clear_view_cameras.js?ver=2020.11.29"></script>
 
 	</head>
 	<body>
@@ -85,7 +86,7 @@
 				<div id="door2-status" class="status-line"></div>
 			</div>
 		</div>
-		<div id="cameraViewportWrapper" data-blue_iris_server="http://sol.home" data-first_cam="Garage" data-scroll_to_top="false" data-resize_viewport="false" data-refresh_rate="500">
+		<div id="cameraViewportWrapper" data-blue_iris_server="http://sol.home" data-first_cam="Garage" data-scroll_to_top="false" data-resize_viewport="false" data-refresh_rate="500" data-quality="20">
 			<div id="cameraViewport">
 				<canvas id="cameraImg"></canvas>
 			</div>
@@ -100,7 +101,13 @@
 					<span>Speed</span>
 					<ul></ul>
 				</li>
+				<li id="camQuality" class="nav-heading">
+					<span>Quality</span>
+					<ul></ul>
+				</li>
 			</ul>
 		</div>
+		<div id="cameraViewerStatus"><p></p></div>
+		<div id="refresh"><button>Refresh</button></div>
 	</body>
 </html>

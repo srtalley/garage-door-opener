@@ -115,4 +115,8 @@ DoorStatusIntervalGlobal = setInterval(GetDoorStatus, 30000);
 	function resizeViewportOnDesktop() {
 		$('#cameraImg').addClass('full-size-viewport');
 	}
+	//Handle the reload
+	$('#refresh button').on('click', function() {
+		location.reload();
+	});
 });
