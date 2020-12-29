@@ -50,15 +50,11 @@
 
 		<link href='https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700' rel='stylesheet' type='text/css'>
 
-		<link rel="stylesheet" href="css/style.css?ver=2020.11.29" type="text/css">
+		<link rel="stylesheet" href="css/style.css?ver=2020.12.28" type="text/css">
 		<link rel="manifest" href="manifest.json">
 
 		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
-
-		<script type="text/javascript" src="viewer/jquery.md5.js"></script>
-		<script type="text/javascript" src="viewer/jquery.cookie.js"></script>
-		<script type="text/javascript" src="viewer/clear_view_cameras.js?ver=2020.12.03"></script>
 
 	</head>
 	<body>
@@ -86,28 +82,7 @@
 				<div id="door2-status" class="status-line"></div>
 			</div>
 		</div>
-		<div id="cameraViewportWrapper" data-blue_iris_server="http://sol.home" data-first_cam="Garage" data-scroll_to_top="false" data-resize_viewport="false" data-refresh_rate="300" data-quality="20" data-width="600">
-			<div id="cameraViewport">
-				<canvas id="cameraImg"></canvas>
-			</div>
-		</div>
-		<div id="cameraSelection">
-			<ul class="navigation">
-				<li id="cameraLinks" class="nav-heading">
-					<span>Cameras</span>
-					<ul></ul>
-				</li>
-				<li id="refreshRates" class="nav-heading">
-					<span>Speed</span>
-					<ul></ul>
-				</li>
-				<li id="camQuality" class="nav-heading">
-					<span>Quality</span>
-					<ul></ul>
-				</li>
-			</ul>
-		</div>
-		<div id="cameraViewerStatus"><p></p></div>
+		<div id="ui3"><iframe src="http://sol.home/ui3.htm?maximize=1&cam=Garage"></iframe></div>
 		<div id="refresh"><button>Refresh</button></div>
 	</body>
 </html>
