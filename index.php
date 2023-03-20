@@ -50,7 +50,7 @@
 
 		<link href='https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700' rel='stylesheet' type='text/css'>
 
-		<link rel="stylesheet" href="css/style.css?ver=2020.12.28" type="text/css">
+		<link rel="stylesheet" href="css/style.css?ver=2023.03.20c" type="text/css">
 		<link rel="manifest" href="manifest.json">
 
 		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
@@ -64,25 +64,26 @@
 		<div class="controller-wrapper">
 			<div class="controller">
 				<div class="door-title">
-		      <h2>Left Door</h2>
+		      		<h2>Left Door</h2>
 				</div>
+				<div id="door1-status" class="status-line"></div>
 				<div class="activation-button">
 			    <button id="1"><span class="buttonText" id="door1-buttonText">Activate</span><span id="door1-opening" class="door-opening">Wait...</span></button>
 				</div>
-				<div id="door1-status" class="status-line"></div>
 			</div>
 			<div class="controller">
 				<div class="door-title">
-		      <h2>Right Door</h2>
+		      		<h2>Right Door</h2>
 				</div>
-				<div class="activation-button">
-			    <button id="2"><span class="buttonText" id="door2-buttonText">Activate</span><span id="door2-opening" class="door-opening">Wait...</span></button>
-				</div>
-				<div id="door2-opening" class="door-opening">Opening...</div>
 				<div id="door2-status" class="status-line"></div>
+				<div class="activation-button">
+			    	<button id="2"><span class="buttonText" id="door2-buttonText">Activate</span><span id="door2-opening" class="door-opening">Wait...</span></button>
+				</div>
 			</div>
 		</div>
-		<div id="ui3"><iframe src="http://sol.home/ui3.htm?maximize=1&cam=Garage"></iframe></div>
+		<div class="ui3"><iframe src="http://sol.home/ui3.htm?maximize=1&cam=Garage"></iframe></div>
+		<div class="ui3"><iframe src="http://sol.home/ui3.htm?maximize=1&cam=Garage2"></iframe></div>
+		<div class="ui3"><iframe src="http://sol.home/ui3.htm?maximize=1&cam=DwySouth"></iframe></div>
 		<div id="refresh"><button>Refresh</button></div>
 	</body>
 </html>

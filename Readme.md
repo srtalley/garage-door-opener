@@ -1,6 +1,11 @@
 This application controls the garage doors and monitors their open/closed status.
 
 ## Versions
+
+### v2023.03.20 
+* Added image for garage front.
+* Added two new camera views.
+
 ### v2020.12.28 
 * Switched to an iframe of UI3 for the camera view and removed the viewer code.
 

@@ -23,30 +23,34 @@ body {
 }
 
 .controller {
-    margin: 20px 0;
-    min-height: 250px;
+    /* margin: 20px 0; */
+    /* min-height: 250px; */
+    margin: 0 0 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 260px;
+    /* background-color: gray; */
+    border-radius: 20px;
 }
 
 .door-title h2 {
-    margin: 20px 0 0;
+    margin: 0;
     letter-spacing: 1px;
     text-shadow: 2px 2px 0px rgb(30 30 30 / 52%);
     text-transform: uppercase;
 }
 
 .activation-button {
-    margin: 20px 0;
+    margin: 0;
 }
 
 .status-line {
     height: 26px;
     background-color: #000;
     color: #c3c3c3;
-    margin: 0 auto 20px;
+    margin: 0 auto 25px;
     border-radius: 10px;
     /* box-shadow: inset 0 -7px 20px -7px #9a9695; */
     width: 180px;
@@ -58,16 +62,16 @@ body {
 .controller-wrapper {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    width: 660px;
-    margin: 0 auto;
-    justify-content: space-around;
-}
-
-.controller {
-    width: 260px;
-    background-color: gray;
-    border-radius: 20px;
+    align-items: flex-end;
+    justify-content: center;
+    width: 700px;
+    height: 342px;
+    padding: 0 92px;
+    margin: 0 auto 10px;
+    background-image: url(../images/garage-front-2019.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .door-opening {
@@ -79,8 +83,8 @@ div.activation-button button {
     color: #fff;
     background-color: #a21b1b;
     border: none;
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
     border-radius: 80px;
     box-shadow: 2px 3px 9px 1px rgb(2 2 2 / 40%);
     font-size: 36px;
@@ -107,13 +111,13 @@ div.activation-button button.disabled-button:active {
     text-shadow: none;
 }
 
-#ui3 {
+.ui3 {
     max-width: 640px;
     width: 100%;
     margin: 0 auto;
 }
 
-#ui3 iframe {
+.ui3 iframe {
     width: 100%;
     height: 360px;
     border: none !important;
@@ -121,10 +125,9 @@ div.activation-button button.disabled-button:active {
 
 #refresh {
     text-align: center;
-    position: absolute;
     width: 100%;
-    bottom: 0;
     padding: 0 10px 20px;
+    margin-top: 10px;
 }
 
 #refresh button {
@@ -144,24 +147,19 @@ div.activation-button button.disabled-button:active {
 }
 
 @media only screen and (max-width: 767px) {
-    #ui3 iframe {
+    .ui3 iframe {
         height: 56vw;
     }
     .controller-wrapper {
-        flex-direction: row;
-        width: 100%;
-        align-items: center;
-        max-width: 320px;
-        margin-top: 10px;
+        max-width: 360px;
+        height: 176px;
+        margin-top: 0px;
+        padding: 0 42px;
     }
     .controller {
         min-height: auto;
         width: 100%;
-        margin: 0 10px 10px;
-        padding: 10px;
-    }
-    .controller:last-child {
-        margin-left: 0;
+        margin: 0 10px;
     }
     .title h2 {
         display: none;
@@ -177,13 +175,11 @@ div.activation-button button.disabled-button:active {
         margin-bottom: 0;
     }
     .activation-button {
-        margin: 10px 0 16px;
+        margin: 10px 0 4px;
     }
     div.activation-button button {
-        min-width: 120px;
-        width: 100%;
-        padding: 40px 5px;
-        height: auto;
+        width: 100px;
+        height: 75px;
         border-radius: 18px;
         font-size: 22px;
     }
